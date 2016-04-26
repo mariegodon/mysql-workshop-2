@@ -1,0 +1,23 @@
+mysql> SELECT COUNT(*) AS totalAccounts FROM Account;
++---------------+
+| totalAccounts |
++---------------+
+|          1000 |
++---------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) AS totalAddressBooks FROM AddressBook;
++-------------------+
+| totalAddressBooks |
++-------------------+
+|              1100 |
++-------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) AS totalEntries FROM Entry;
++--------------+
+| totalEntries |
++--------------+
+|         4000 |
++--------------+
+1 row in set (0.00 sec)

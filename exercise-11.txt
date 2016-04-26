@@ -1,0 +1,23 @@
+mysql> SELECT COUNT(*) AS "Entries not listed as 'other'" FROM Entry WHERE type != "other";
++-------------------------------+
+| Entries not listed as 'other' |
++-------------------------------+
+|                          2800 |
++-------------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) AS "Entries as Home or Work" FROM Entry WHERE type = "home" OR type = "work";
++-------------------------+
+| Entries as Home or Work |
++-------------------------+
+|                    2800 |
++-------------------------+
+1 row in set (0.01 sec)
+
+mysql> SELECT COUNT(*) AS "Entries as Phones" FROM Entry WHERE subtype = "phone";
++-------------------+
+| Entries as Phones |
++-------------------+
+|               600 |
++-------------------+
+1 row in set (0.01 sec)

@@ -1,0 +1,29 @@
+mysql> SELECT accountID, COUNT(*) AS "Total AddressBooks" FROM AddressBook GROUP BY accountID ORDER BY COUNT(*) DESC;
++-----------+--------------------+
+| accountID | Total AddressBooks |
++-----------+--------------------+
+|         5 |                 19 |
+|        14 |                 19 |
+
+mysql> SELECT id, email FROM Account WHERE id = 5 OR id = 14;                                                                           
++----+-------------------------------+
+| id | email                         |
++----+-------------------------------+
+|  5 | in.cursus@sedconsequat.edu    |
+| 14 | egestas.Fusce.aliquet@nec.edu |
++----+-------------------------------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT addressBookId, COUNT(*) AS "Total Entries" FROM Entry GROUP BY addressBookId ORDER BY COUNT(*) DESC;
++---------------+---------------+
+| addressBookId | Total Entries |
++---------------+---------------+
+|            37 |            52 |
+
+mysql> SELECT name FROM AddressBook WHERE id = 37;
++-----------------------+
+| name                  |
++-----------------------+
+| Eu Augue Incorporated |
++-----------------------+
+1 row in set (0.00 sec)

@@ -1,0 +1,30 @@
+mysql> SELECT id, email FROM Account WHERE id = 63;
++----+-------------------------------------------------+
+| id | email                                           |
++----+-------------------------------------------------+
+| 63 | consectetuer.rhoncus.Nullam@temporloremeget.org |
++----+-------------------------------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT accountId, name FROM AddressBook WHERE accountId = 3;
++-----------+---------------------------------+
+| accountId | name                            |
++-----------+---------------------------------+
+|         3 | Donec Incorporated              |
+|         3 | Ipsum Nunc LLC                  |
+|         3 | In Consectetuer Ltd             |
+|         3 | Lacus Aliquam Rutrum Industries |
+|         3 | Ac Ltd                          |
+|         3 | Mauris Consulting               |
+|         3 | Ornare Corporation              |
++-----------+---------------------------------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT id, name, createdOn FROM AddressBook WHERE name = "Lorem Foundation";
++-----+------------------+---------------------+
+| id  | name             | createdOn           |
++-----+------------------+---------------------+
+|   5 | Lorem Foundation | 2016-06-26 02:43:41 |
+| 153 | Lorem Foundation | 2015-05-04 14:28:16 |
++-----+------------------+---------------------+
+2 rows in set (0.00 sec)
