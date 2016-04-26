@@ -1,0 +1,10 @@
+mysql> INSERT INTO Account (email, password, createdOn, modifiedOn) VALUES ("m@gmail.com", "secretpassword", "2014-11-11","2015-11-12"); 
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO AddressBook (accountId, name, createdOn, modifiedOn) VALUES (3, "Marie", "2012-03-12", "2012-04-12")
+    -> ;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> INSERT INTO Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne) VALUES (1, "Marie",  "Godon", "1991-12-19", "home", "phone", "some address"), (2, "David", "Ek", "1991-12-12", "work", "addressBookIdIdds", "blah"), (56, "Steph", "Letellier", "1984-08-10", "other", "email", "content");
+Query OK, 3 rows affected, 1 warning (0.00 sec)
+Records: 3  Duplicates: 0  Warnings: 1
